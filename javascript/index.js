@@ -4,6 +4,7 @@ function mostrarConteudo(conteudo) {
     document.getElementById('restaurantes-container').style.display = 'none';
     document.getElementById('geradornum-container').style.display = 'none';
     document.getElementById('roleta-container').style.display = 'none';
+    document.getElementById('conversorhora-container').style.display = 'none';
 
     document.getElementById(`${conteudo}-container`).style.display = 'block';
 }
