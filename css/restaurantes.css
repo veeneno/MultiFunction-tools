@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #800080, #0000FF); 
+    background-size: 1920px 1080px;
+
+    color: white;
+}
+
+#restaurantes-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e1cdfa; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000; 
+}
+
+#restaurantes-container h1 {
+    color: #800080; 
+    text-align: center;
+}
+
+#restaurantes-container label {
+    font-size: 16px; 
+    color: #800080; 
+    display: block;
+    margin-bottom: 5px;
+}
+
+#restaurantes-container input[type="number"] {
+    text-align: center;
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #800080; 
+    border-radius: 4px;
+}
+
+#restaurantes-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#restaurantes-container #generateBtn {
+    background-color: #800080; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#restaurantes-container p#rests {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #800080; 
+}
+
+#restaurantes-container #submit {
+    background-color: #fff;
+    color: #8a2be2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+#restaurantes-container button {
+    margin: 0 auto;
+}
+#restaurantes-container button:hover {
+    margin: 0 auto;
+}
+

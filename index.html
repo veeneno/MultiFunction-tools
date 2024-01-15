@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conversor.css">
+    <link rel="stylesheet" href="css/gerador.css">
+    <link rel="stylesheet" href="css/restaurantes.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#" onclick="mostrarConteudo('conversor')">Conversor de Temperatura</a>
+        <a href="#" onclick="mostrarConteudo('gerador')">Gerador de Senhas</a>
+        <a href="#" onclick="mostrarConteudo('restaurantes')">restaurantes</a>
+    </nav>
+
+    <div id="conversor-container" class="conteudo">
+        <form>
+            <h1>Temperature conversion:</h1>
+            <input type="number" id="textBox" value="0"><br>
+    
+            <input type="radio" id="toF" name="unit">
+            <label for="toF">Celsius ➡ Fahrenheit</label><br>
+    
+            <input type="radio" id="toC" name="unit">
+            <label for="toF">Fahrenheit ➡ Celsius</label><br>
+    
+            <button type="button" onclick="convert()">submit</button>
+            <p id="result"></p>
+        
+        </form>
+        <script src="javascript/conversor.js"></script>
+    </div>
+
+    <div id="gerador-container" class="conteudo">
+        <h1>GERADOR DE SENHA</h1>
+        <label for="passwordLenght">Insira o tamanho da senha desejada</label><br>
+        <input type="number" id="passwordLenght" value="1" min="1"><br><br>
+        <label for="lc">caracteres minusculos</label>
+        <input type="checkbox" id="lc"><br><br>
+        <label for="uc">caracteres maiusculos</label>
+        <input type="checkbox" id="uc"><br><br>
+        <label for="num">numeros</label>
+        <input type="checkbox" id="num"><br><br>
+        <label for="sym">simbolos</label>
+        <input type="checkbox" id="sym"><br><br>
+        <button id="submit" onclick="showPass()">submit</button><br>
+
+        <p id="passgenerated"></p>
+        <script src="javascript/gerador.js"></script>
+    </div>
+
+    <div id="restaurantes-container" class="conteudo">
+        <label for="pessoas">Digite o numero de pessoas que vao ao restaurante</label><br>
+        <input type="number" id="pessoas" value="1" min="1"><br><br>
+        <label for="gasto">qual a media de preco que voces pretendem gastar ao todo (valor inteiro por exemplo: 20)</label><br>
+        <input type="number" id="gasto" value="10" min="10"><br><br>
+        <button id="submit" onclick=showRestaurants()>Submit</button><br><br>
+
+        <p id="rests"></p>
+        <script src="javascript/restaurantes.js"></script>
+    </div>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #800080, #0000FF); 
+
+    color: white;
+}
+
+
+nav {
+    background-color: #330f33;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: font-size 0.3s; 
+}
+
+nav a:hover {
+    font-size: 130%; 
+}
+
+#conversor-container, #gerador-container, #restaurantes-container  {
+    display: none;
+}
+
