@@ -20,7 +20,7 @@
         <a href="#" onclick="mostrarConteudo('restaurantes')">Restaurantes</a>
         <a href="#" onclick="mostrarConteudo('geradornum')">Gerador de Numero Aleatorio</a>
         <a href="#" onclick="mostrarConteudo('roleta')">Roleta</a>
-        <a href="#" onclick="mostrarConteudo('conversorhora')">Roleta</a>
+        <a href="#" onclick="mostrarConteudo('conversorhora')">Conversor de Hora</a>
     </nav>
 
     <div id="conversor-container" class="conteudo">
@@ -102,9 +102,52 @@
         <script src="javascript/roleta.js"></script>
     </div>
 
-    <div id="conversorhora-container"class="conteudo">
-
-
+    <div id="conversorhora-container" class="conteudo">
+        <form>
+            <h1>Conversor de Hora:</h1>
+            <input type="number" id="ba" value="0"><br>
+    
+            <div class="radio-table">
+                <input type="radio" id="secToMin" name="unit">
+                <label for="secToMin">segundos ➡ minutos</label><br>
+    
+                <input type="radio" id="secToHour" name="unit">
+                <label for="secToHour">segundos ➡ horas</label><br>
+    
+                <input type="radio" id="secToYear" name="unit">
+                <label for="secToYear">segundos ➡ anos</label><br>
+    
+                <input type="radio" id="minToSec" name="unit">
+                <label for="minToSec">minutos ➡ segundos</label><br>
+    
+                <input type="radio" id="minToHour" name="unit">
+                <label for="minToHour">minutos ➡ horas</label><br>
+    
+                <input type="radio" id="minToYear" name="unit">
+                <label for="minToYear">minutos ➡ anos</label><br>
+    
+                <input type="radio" id="hourToSec" name="unit">
+                <label for="hourToSec">horas ➡ segundos</label><br>
+    
+                <input type="radio" id="hourToMin" name="unit">
+                <label for="hourToMin">horas ➡ minutos</label><br>
+    
+                <input type="radio" id="hourToYear" name="unit">
+                <label for="hourToYear">horas ➡ anos</label><br>
+    
+                <input type="radio" id="yearToSec" name="unit">
+                <label for="yearToSec">anos ➡ segundos</label><br>
+    
+                <input type="radio" id="yearToMin" name="unit">
+                <label for="yearToMin">anos ➡ minutos</label><br>
+    
+                <input type="radio" id="yearToHour" name="unit">
+                <label for="yearToHour">anos ➡ horas</label><br>
+            </div>
+    
+            <button id="submit" onclick="convertTime()">Enviar</button>
+            <p id="resultTime"></p>
+        </form>
         <script src="javascript/conversorhora.js"></script>
     </div>
 

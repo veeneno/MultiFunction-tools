@@ -1,21 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #800080, #0000FF); 
-    background-size: cover;
-
-    color: white;
-}
-
-
-
-#conversor-container h1 {
+#conversorhora-container h1 {
     color: #000000; 
 }
 
-#conversor-container form {
+#conversorhora-container form {
     background-color: #e1cdfa; 
     text-align: center;
-    max-width: 350px;
+    max-width: 600px; /* Ajuste conforme necessário */
     margin: auto;
     padding: 25px;
     border-radius: 10px;
@@ -23,23 +13,34 @@ body {
     border: 2px solid #000; 
 }
 
-#conversor-container #textBox {
-    width: 50%;
+.radio-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.radio-table input[type="radio"] {
+    display: none;
+}
+
+.radio-table label {
+    display: block;
     text-align: center;
-    font-size: 2em;
-    border: 2px solid rgba(0, 0, 0, 0.767);
-    border-radius: 4px;
-    margin-bottom: 15px;
-    background-color: #f8f8f8; 
-}
-
-#conversor-container label {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    color: #8a2be2; 
+    color: #8a2be2;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #8a2be2;
+    border-radius: 5px;
 }
 
-#conversor-container button {
+.radio-table input[type="radio"]:checked + label {
+    background-color: #8a2be2;
+    color: #fff;
+}
+
+#conversorhora-container button {
     margin-top: 15px;
     background-color: #8a2be2; 
     color: #fff;
@@ -50,12 +51,13 @@ body {
     cursor: pointer;
 }
 
-#conversor-container button:hover {
+#conversorhora-container button:hover {
     background-color: #7d29c4; 
 }
 
-#conversor-container #result {
-    font-size: 1.75em;
+#resultTime {
+    font-size: 1.2em;
     font-weight: bold;
-    color: #8a2be2; 
+    color: #8a2be2;
+    margin-top: 10px;
 }
