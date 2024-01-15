@@ -38,9 +38,6 @@ function showRestaurants() {
         
         mudarP();
     }
-
-    
-
 }
 
 function mudarP(){
