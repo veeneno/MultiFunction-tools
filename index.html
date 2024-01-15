@@ -14,12 +14,12 @@
     <nav>
         <a href="#" onclick="mostrarConteudo('conversor')">Conversor de Temperatura</a>
         <a href="#" onclick="mostrarConteudo('gerador')">Gerador de Senhas</a>
-        <a href="#" onclick="mostrarConteudo('restaurantes')">restaurantes</a>
+        <a href="#" onclick="mostrarConteudo('restaurantes')">Restaurantes</a>
     </nav>
 
     <div id="conversor-container" class="conteudo">
         <form>
-            <h1>Temperature conversion:</h1>
+            <h1>Conversor de Temperatura:</h1>
             <input type="number" id="textBox" value="0"><br>
     
             <input type="radio" id="toF" name="unit">
@@ -28,7 +28,7 @@
             <input type="radio" id="toC" name="unit">
             <label for="toF">Fahrenheit ➡ Celsius</label><br>
     
-            <button type="button" onclick="convert()">submit</button>
+            <button type="button" onclick="convert()">Enviar</button>
             <p id="result"></p>
         
         </form>
@@ -47,7 +47,7 @@
         <input type="checkbox" id="num"><br><br>
         <label for="sym">simbolos</label>
         <input type="checkbox" id="sym"><br><br>
-        <button id="submit" onclick="showPass()">submit</button><br>
+        <button id="submit" onclick="showPass()">Enviar</button><br>
 
         <p id="passgenerated"></p>
         <script src="javascript/gerador.js"></script>
@@ -58,7 +58,7 @@
         <input type="number" id="pessoas" value="1" min="1"><br><br>
         <label for="gasto">qual a media de preco que voces pretendem gastar ao todo (valor inteiro por exemplo: 20)</label><br>
         <input type="number" id="gasto" value="10" min="10"><br><br>
-        <button id="submit" onclick=showRestaurants()>Submit</button><br><br>
+        <button id="submit" onclick=showRestaurants()>Enviar</button><br><br>
 
         <p id="rests"></p>
         <script src="javascript/restaurantes.js"></script>

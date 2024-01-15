@@ -58,20 +58,18 @@ body {
     color: #800080; 
 }
 
-#restaurantes-container #submit {
-    background-color: #fff;
-    color: #8a2be2;
-    padding: 10px 20px;
+#restaurantes-container button {
+    margin-top: 15px;
+    background-color: #8a2be2; 
+    color: #fff;
+    font-size: 1.5em;
     border: none;
-    border-radius: 4px;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    display: block;
 }
 
-#restaurantes-container button {
-    margin: 0 auto;
-}
 #restaurantes-container button:hover {
-    margin: 0 auto;
+    background-color: #7d29c4; 
 }
 
