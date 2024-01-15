@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/conversor.css">
     <link rel="stylesheet" href="css/gerador.css">
     <link rel="stylesheet" href="css/restaurantes.css">
+    <link rel="stylesheet" href="css/geradornum.css">
 </head>
 <body>
 
@@ -15,6 +16,7 @@
         <a href="#" onclick="mostrarConteudo('conversor')">Conversor de Temperatura</a>
         <a href="#" onclick="mostrarConteudo('gerador')">Gerador de Senhas</a>
         <a href="#" onclick="mostrarConteudo('restaurantes')">Restaurantes</a>
+        <a href="#" onclick="mostrarConteudo('geradornum')">Gerador de Numero Aleatorio</a>
     </nav>
 
     <div id="conversor-container" class="conteudo">
@@ -36,7 +38,7 @@
     </div>
 
     <div id="gerador-container" class="conteudo">
-        <h1>GERADOR DE SENHA</h1>
+        <h1>Gerador de Senha</h1>
         <label for="passwordLenght">Insira o tamanho da senha desejada</label><br>
         <input type="number" id="passwordLenght" value="1" min="1"><br><br>
         <label for="lc">caracteres minusculos</label>
@@ -54,6 +56,7 @@
     </div>
 
     <div id="restaurantes-container" class="conteudo">
+        <h1>Restaurantes</h1><br>
         <label for="pessoas">Digite o numero de pessoas que vao ao restaurante</label><br>
         <input type="number" id="pessoas" value="1" min="1"><br><br>
         <label for="gasto">qual a media de preco que voces pretendem gastar ao todo (valor inteiro por exemplo: 20)</label><br>
@@ -62,6 +65,22 @@
 
         <p id="rests"></p>
         <script src="javascript/restaurantes.js"></script>
+    </div>
+
+    <div id="geradornum-container" class="conteudo">
+        <h1>Gerador de Numero Aleatorio</h1>
+        <label for="min">Qual o menor valor que pode ser sorteado</label><br>
+        <input type="number" id="min" min="1" value="1"><br><br>
+        <label for="min">Qual o maior valor que pode ser sorteado</label><br>
+        <input type="number" id="max" value="6"><br><br>
+        <label for="vzs">Quantos numeros devem ser sorteados</label><br>
+        <input type="number" id="vzs" value="1" min="1"><br><br>
+
+        <button id="submit" onclick="sortearNumero()">Sortear</button>
+
+        <p id="sort"></p>
+
+        <script src="javascript/geradornum.js"></script>
     </div>
 
     <script src="javascript/index.js"></script>

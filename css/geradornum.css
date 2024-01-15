@@ -1,0 +1,57 @@
+#geradornum-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e1cdfa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+    text-align: center;
+}
+
+#geradornum-container h1{
+    color: #000;
+    text-align: center;
+}
+
+#geradornum-container label,
+#geradornum-container input[type="number"],
+#geradornum-container button,
+#geradornum-container p {
+    margin-bottom: 10px;
+}
+
+#geradornum-container label {
+    display: block;
+    color: #000000;
+}
+
+#geradornum-container input[type="number"] {
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000000;
+}
+
+#geradornum-container button {
+    background-color: #8a2be2;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#geradornum-container button:hover {
+    background-color: #7d29c4;
+}
+
+#geradornum-container p {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}

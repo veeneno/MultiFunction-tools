@@ -17,13 +17,13 @@ body {
 }
 
 #restaurantes-container h1 {
-    color: #800080; 
+    color: #000000; 
     text-align: center;
 }
 
 #restaurantes-container label {
     font-size: 16px; 
-    color: #800080; 
+    color: #000000; 
     display: block;
     margin-bottom: 5px;
 }
@@ -55,7 +55,7 @@ body {
     text-align: center;
     margin-top: 20px;
     font-weight: bold;
-    color: #800080; 
+    color: #000000; 
 }
 
 #restaurantes-container button {
