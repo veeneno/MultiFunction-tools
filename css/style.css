@@ -26,7 +26,7 @@ nav a:hover {
     font-size: 130%; 
 }
 
-#conversor-container, #gerador-container, #restaurantes-container, #geradornum-container{
+#conversor-container, #gerador-container, #restaurantes-container, #geradornum-container, #roleta-container{
     display: none;
 }
 

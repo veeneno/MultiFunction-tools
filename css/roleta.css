@@ -1,0 +1,78 @@
+#roleta-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e1cdfa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+    text-align: center; 
+}
+
+#roleta-container label,
+#roleta-container input[type="text"],
+#roleta-container button,
+#roleta-container input[type="checkbox"],
+#roleta-container p {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#roleta-container label {
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#roleta-container input[type="text"] {
+    text-align: center;
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000000;
+}
+
+#roleta-container input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.5);
+}
+
+#roleta-container button {
+    background-color: #8a2be2; 
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#roleta-container button:hover {
+    background-color: #7d29c4; 
+}
+
+#roleta-container pre#itens {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+#roleta-container pre#itens span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#roleta-container pre#itens .vermelho { color: red; }
+#roleta-container pre#itens .amarelo { color: yellow; }
+#roleta-container pre#itens .azul { color: blue; }
+#roleta-container pre#itens .laranja { color: orange; }
+#roleta-container pre#itens .preto { color: black; }
+#roleta-container pre#itens .branco { color: white; }
+#roleta-container p#itemSorteado {
+    text-align: center;
+    font-weight: bold;
+    color: #b83bc4;
+}

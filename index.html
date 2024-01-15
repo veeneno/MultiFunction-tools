@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/gerador.css">
     <link rel="stylesheet" href="css/restaurantes.css">
     <link rel="stylesheet" href="css/geradornum.css">
+    <link rel="stylesheet" href="css/roleta.css">
 </head>
 <body>
 
@@ -17,6 +18,7 @@
         <a href="#" onclick="mostrarConteudo('gerador')">Gerador de Senhas</a>
         <a href="#" onclick="mostrarConteudo('restaurantes')">Restaurantes</a>
         <a href="#" onclick="mostrarConteudo('geradornum')">Gerador de Numero Aleatorio</a>
+        <a href="#" onclick="mostrarConteudo('roleta')">Roleta</a>
     </nav>
 
     <div id="conversor-container" class="conteudo">
@@ -81,6 +83,21 @@
         <p id="sort"></p>
 
         <script src="javascript/geradornum.js"></script>
+    </div>
+
+    <div id="roleta-container" class="conteudo">
+        <label for="addItem">Qual item deseja adicionar a roleta</label><br>
+        <input type="text" id="addItem"><br><br>
+        <button id="add" onclick="adicionarItem()">Adicionar</button>
+        <button id="girar" onclick="girarRoleta()">Girar Roleta</button>
+        <button id="remove" onclick="removerItem()">Remover ultimo item</button>
+        <label for="querRemover">selecione caso deseje remover o item sorteado</label><br>
+        <input type="checkbox" id="querRemover">
+        
+        <pre id="itens"></pre>
+        <p id="itemSorteado"></p>
+
+        <script src="javascript/roleta.js"></script>
     </div>
 
     <script src="javascript/index.js"></script>
