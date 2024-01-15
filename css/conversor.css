@@ -1,11 +1,19 @@
-#conversorhora-container h1 {
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #800080, #0000FF); 
+    background-size: cover;
+
+    color: white;
+}
+
+#conversor-container h1 {
     color: #000000; 
 }
 
-#conversorhora-container form {
+#conversor-container form {
     background-color: #e1cdfa; 
     text-align: center;
-    max-width: 600px; /* Ajuste conforme necessário */
+    max-width: 350px;
     margin: auto;
     padding: 25px;
     border-radius: 10px;
@@ -13,34 +21,23 @@
     border: 2px solid #000; 
 }
 
-.radio-table {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-.radio-table input[type="radio"] {
-    display: none;
-}
-
-.radio-table label {
-    display: block;
+#conversor-container #textBox {
+    width: 50%;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0.767);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #f8f8f8; 
+}
+
+#conversor-container label {
+    font-size: 1.5em;
     font-weight: bold;
-    color: #8a2be2;
-    cursor: pointer;
-    padding: 10px;
-    border: 2px solid #8a2be2;
-    border-radius: 5px;
+    color: #8a2be2; 
 }
 
-.radio-table input[type="radio"]:checked + label {
-    background-color: #8a2be2;
-    color: #fff;
-}
-
-#conversorhora-container button {
+#conversor-container button {
     margin-top: 15px;
     background-color: #8a2be2; 
     color: #fff;
@@ -51,13 +48,12 @@
     cursor: pointer;
 }
 
-#conversorhora-container button:hover {
+#conversor-container button:hover {
     background-color: #7d29c4; 
 }
 
-#resultTime {
-    font-size: 1.2em;
+#conversor-container #result {
+    font-size: 1.75em;
     font-weight: bold;
-    color: #8a2be2;
-    margin-top: 10px;
+    color: #8a2be2; 
 }
