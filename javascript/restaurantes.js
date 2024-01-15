@@ -32,7 +32,7 @@ function showRestaurants() {
     else{
         for (let i = 0; i < restaurantes.length; i++) {
             if (restaurantes[i].valor * numeroPessoas <= gastoTotal) {
-                possivelRestaurant.push(restaurantes[i].nome);
+                possivelRestaurant.push(restaurantes[i].nome + " $" + restaurantes[i].valor * numeroPessoas);
             }
         }
         
