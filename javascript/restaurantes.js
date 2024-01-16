@@ -16,7 +16,8 @@ let res6 = { nome: "feijoada", valor: 45 };
 let res7 = { nome: "feira de rua", valor: 10 };
 let res8 = { nome: "Restaurante do jaquim", valor: 200 };
 let res9 = { nome: "fervoroso", valor: 60};
-let restaurantes = [res1, res2, res3, res4, res5, res6, res7, res8, res9];
+let res10 = { nome: "frutaria", valor: 80 }
+let restaurantes = [res1, res2, res3, res4, res5, res6, res7, res8, res9, res10];
 
 function showRestaurants() {
     numeroPessoas = Number(pessoas.value);
