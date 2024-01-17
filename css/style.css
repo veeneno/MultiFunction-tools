@@ -1,17 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #800080, #0000FF); 
-
+    background-size: 2500px 2000px;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
 
 nav {
     background-color: #330f33;
     color: white;
     padding: 10px;
     text-align: center;
-    margin-bottom: 20px; 
 }
 
 nav a {
@@ -26,7 +31,34 @@ nav a:hover {
     font-size: 130%; 
 }
 
+#adhorizontalesquerda {
+    padding: 1px;
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 150px; 
+    height: 10px; 
+    float: left; 
+}
+
+#adhorizontaldireita {
+    padding: 1px;
+    margin-top: 60px;
+    margin-right: 10px;
+    width: 150px; 
+    height: 10px; 
+    float: right;
+}
+
+#adver {
+    position: fixed; 
+    height: 100px !important;
+    bottom: 0; 
+    margin-bottom: 10px;
+    left: 140px; 
+    width: 1600px; 
+    
+}
+
 #conversor-container, #gerador-container, #restaurantes-container, #geradornum-container, #roleta-container, #conversorhora-container {
     display: none;
 }
-

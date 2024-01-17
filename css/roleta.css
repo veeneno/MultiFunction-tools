@@ -9,6 +9,10 @@
     text-align: center; 
 }
 
+#roleta-container h1{
+    color: #000000; 
+}
+
 #roleta-container label,
 #roleta-container input[type="text"],
 #roleta-container button,

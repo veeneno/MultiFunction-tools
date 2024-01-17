@@ -8,4 +8,3 @@ function mostrarConteudo(conteudo) {
 
     document.getElementById(`${conteudo}-container`).style.display = 'block';
 }
-5
